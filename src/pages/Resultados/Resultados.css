@@ -1,0 +1,137 @@
+.resultados-pagina {
+  padding: 28px 56px 72px;
+}
+
+.resultados-encabezado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+.resultados-encabezado h1 {
+  font-size: 32px;
+  color: var(--verde-oscuro-800);
+  margin-bottom: 10px;
+}
+.resultados-encabezado p {
+  color: var(--texto-muted);
+  font-size: 16px;
+  max-width: 620px;
+  line-height: 1.5;
+}
+
+.resultados-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.resultados-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resultado-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 26px;
+  flex-wrap: wrap;
+  width: 100%;
+  border: none;
+  background: #fff;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.resultado-card:hover {
+  box-shadow: 0 10px 24px rgba(31, 94, 59, 0.1);
+  transform: translateY(-1px);
+}
+.resultado-card:focus-visible {
+  outline: 2px solid var(--verde-oscuro);
+  outline-offset: 2px;
+}
+
+.resultado-equipos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 600;
+  color: var(--verde-oscuro-800);
+  font-size: 15px;
+}
+.resultado-equipos span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.resultado-equipos i {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.resultado-equipos .vs {
+  color: var(--texto-muted);
+  font-weight: 400;
+}
+
+.resultado-notas {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nota-pill {
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 6px 14px;
+  letter-spacing: 0.02em;
+}
+.nota-pill.jurado {
+  background: #E4EEF7;
+  color: #1F5E8C;
+}
+.nota-pill.publico {
+  background: #FBF0D6;
+  color: #8A6D1D;
+}
+.nota-pill.avanza {
+  background: #E1F2D8;
+  color: var(--verde-oscuro);
+}
+.nota-pill.pendiente {
+  background: #EDEBE0;
+  color: var(--texto-muted);
+}
+
+.resultados-vacio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 32px;
+  border-style: dashed;
+}
+.resultados-vacio p {
+  color: var(--texto-muted);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .resultados-pagina {
+    padding: 24px 20px 56px;
+  }
+  .resultados-encabezado {
+    flex-direction: column;
+  }
+  .resultado-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

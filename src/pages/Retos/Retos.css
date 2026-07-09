@@ -1,0 +1,148 @@
+/* /pages/Retos.css */
+.retos-pagina {
+  padding: 28px 56px 72px;
+}
+
+.retos-encabezado {
+  margin-bottom: 36px;
+}
+.retos-encabezado h1 {
+  font-size: 32px;
+  color: var(--verde-oscuro-800);
+  margin-bottom: 10px;
+}
+.retos-encabezado p {
+  color: var(--texto-muted);
+  font-size: 16px;
+  max-width: 620px;
+  line-height: 1.5;
+}
+
+.retos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.reto-card {
+  display: flex;
+  gap: 18px;
+  padding: 24px 26px;
+  border-left: 4px solid var(--verde-claro);
+}
+
+.reto-card-primero {
+  position: relative; 
+}
+
+.mascota-retos {
+  position: absolute;
+  bottom: 100%; 
+  right: 24px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.reto-icono {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 10px;
+  background: var(--amarillo);
+  color: var(--verde-oscuro-800);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reto-info h3 {
+  font-size: 19px;
+  color: var(--verde-oscuro-800);
+  margin-bottom: 6px;
+}
+.reto-info p {
+  color: var(--texto-muted);
+  font-size: 14.5px;
+  margin: 0 0 14px;
+}
+
+.reto-meta {
+  display: flex;
+  gap: 24px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--verde-oscuro);
+}
+.reto-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rubrica-bloque {
+  background: var(--verde-oscuro-800);
+  color: #fff;
+  border-radius: 14px;
+  padding: 28px 32px 0 32px; 
+  position: relative;
+  overflow: visible; 
+}
+
+.rubrica-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.rubrica-icono {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.14);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.rubrica-bloque h3 {
+  font-size: 17px;
+}
+
+.rubrica-tabla {
+  width: 100%; 
+  margin-right: 240px; 
+  max-width: calc(100% - 240px); 
+  padding-bottom: 28px; 
+}
+
+.rubrica-fila {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+.rubrica-fila:last-child {
+  border-bottom: none;
+}
+
+.mascota-rubrica {
+  position: absolute;
+  bottom: 0; 
+  right: 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .retos-pagina {
+    padding: 24px 20px 56px;
+  }
+  .rubrica-bloque {
+    padding: 24px 20px;
+  }
+  .mascota-retos,
+  .mascota-rubrica {
+    display: none; 
+  }
+}

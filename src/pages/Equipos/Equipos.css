@@ -1,0 +1,83 @@
+.equipos-pagina {
+  padding: 28px 56px 72px;
+}
+
+.equipos-encabezado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+.equipos-encabezado h1 {
+  font-size: 32px;
+  color: var(--verde-oscuro-800);
+  margin-bottom: 10px;
+}
+.equipos-encabezado p {
+  color: var(--texto-muted);
+  font-size: 16px;
+  max-width: 620px;
+  line-height: 1.5;
+}
+
+.equipos-aviso {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FDF6E0;
+  border: 1px dashed #E3C874;
+  color: #8A6D1D;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.equipos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.equipo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.equipo-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.equipo-card h3 {
+  font-size: 18px;
+  color: var(--verde-oscuro-800);
+}
+
+.equipo-estado {
+  font-size: 13.5px;
+  color: var(--texto-muted);
+}
+
+@media (max-width: 900px) {
+  .equipos-pagina {
+    padding: 24px 20px 56px;
+  }
+  .equipos-encabezado {
+    flex-direction: column;
+  }
+}

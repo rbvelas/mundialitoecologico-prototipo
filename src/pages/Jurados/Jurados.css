@@ -1,0 +1,91 @@
+.jurados-pagina {
+  padding: 28px 56px 72px;
+}
+
+.jurados-encabezado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+.jurados-encabezado h1 {
+  font-size: 32px;
+  color: var(--verde-oscuro-800);
+  margin-bottom: 10px;
+}
+.jurados-encabezado p {
+  color: var(--texto-muted);
+  font-size: 16px;
+  max-width: 620px;
+  line-height: 1.5;
+}
+
+.jurados-aviso {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FDF6E0;
+  border: 1px dashed #E3C874;
+  color: #8A6D1D;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.jurados-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.jurado-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 44px 20px;
+  text-align: center;
+}
+
+.jurado-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 2px solid var(--verde-claro);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto-muted);
+  margin-bottom: 6px;
+}
+
+.jurado-card h3 {
+  font-size: 19px;
+  color: var(--verde-oscuro-800);
+}
+
+.jurado-estado {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--verde-claro);
+  letter-spacing: 0.03em;
+}
+
+.jurado-card p {
+  color: var(--texto-muted);
+  font-size: 14px;
+  max-width: 480px;
+  margin: 8px 0 0;
+}
+
+@media (max-width: 900px) {
+  .jurados-pagina {
+    padding: 24px 20px 56px;
+  }
+  .jurados-encabezado {
+    flex-direction: column;
+  }
+}

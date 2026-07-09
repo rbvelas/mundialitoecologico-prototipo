@@ -1,0 +1,104 @@
+{
+  "retos": [
+    {
+      "id": 1,
+      "slug": "mision-punto-verde",
+      "nombre": "Misión Punto Verde",
+      "descripcion": "Diseñar una estación de reciclaje funcional para el colegio.",
+      "entregable": "Estación de reciclaje",
+      "duracion_min": 75,
+      "icono": "recycle"
+    },
+    {
+      "id": 2,
+      "slug": "ecoguardianes",
+      "nombre": "Ecoguardianes",
+      "descripcion": "Construir refugios para aves o perritos con materiales reciclados.",
+      "entregable": "Casita para aves o perritos",
+      "duracion_min": 85,
+      "icono": "paw-print"
+    },
+    {
+      "id": 3,
+      "slug": "aqualab",
+      "nombre": "AquaLab",
+      "descripcion": "Crear un prototipo para ahorrar o reutilizar agua.",
+      "entregable": "Prototipo de ahorro de agua",
+      "duracion_min": 90,
+      "icono": "droplet"
+    },
+    {
+      "id": 4,
+      "slug": "ecoutilidad-extrema",
+      "nombre": "EcoUtilidad Extrema",
+      "descripcion": "Construir objetos útiles para el colegio: organizadores, macetas, portalápices.",
+      "entregable": "Objetos útiles reciclados",
+      "duracion_min": 85,
+      "icono": "wrench"
+    },
+    {
+      "id": 5,
+      "slug": "ecofashion-challenge",
+      "nombre": "EcoFashion Challenge",
+      "descripcion": "Diseñar accesorios ecológicos con un mensaje ambiental.",
+      "entregable": "Accesorios + lema ambiental",
+      "duracion_min": 70,
+      "icono": "shirt"
+    },
+    {
+      "id": 6,
+      "slug": "ecocity-2030",
+      "nombre": "EcoCity 2030",
+      "descripcion": "Diseñar una maqueta de un colegio o ciudad sostenible del futuro.",
+      "entregable": "Maqueta sostenible",
+      "duracion_min": 120,
+      "icono": "home"
+    },
+    {
+      "id": 7,
+      "slug": "mision-legado-verde",
+      "nombre": "Misión Legado Verde",
+      "descripcion": "Transformar un espacio real del colegio en un lugar más sostenible.",
+      "entregable": "Espacio transformado",
+      "duracion_min": 150,
+      "icono": "trees"
+    }
+  ],
+  "equipos": [
+    { "id": 1, "codigo": "E1", "nombre": "Equipo 1", "color": "#1F5E3B", "confirmado": false },
+    { "id": 2, "codigo": "E2", "nombre": "Equipo 2", "color": "#92BC26", "confirmado": false },
+    { "id": 3, "codigo": "E3", "nombre": "Equipo 3", "color": "#F4D666", "confirmado": false },
+    { "id": 4, "codigo": "E4", "nombre": "Equipo 4", "color": "#2952A3", "confirmado": false },
+    { "id": 5, "codigo": "E5", "nombre": "Equipo 5", "color": "#C0392B", "confirmado": false },
+    { "id": 6, "codigo": "E6", "nombre": "Equipo 6", "color": "#7B4FA6", "confirmado": false },
+    { "id": 7, "codigo": "E7", "nombre": "Equipo 7", "color": "#D9722C", "confirmado": false },
+    { "id": 8, "codigo": "E8", "nombre": "Equipo 8", "color": "#A98B1F", "confirmado": false }
+  ],
+  "jurados": [
+    { "id": 1, "nombre": "Jurado 1 — Por confirmar", "estado": "POR CONFIRMAR", "bio": "Biografía y especialidad pendientes de recibir de la organización." },
+    { "id": 2, "nombre": "Jurado 2 — Por confirmar", "estado": "POR CONFIRMAR", "bio": "Biografía y especialidad pendientes de recibir de la organización." },
+    { "id": 3, "nombre": "Jurado 3 — Por confirmar", "estado": "POR CONFIRMAR", "bio": "Biografía y especialidad pendientes de recibir de la organización." }
+  ],
+  "resultados": [
+    { "id": 1, "ronda": "cuartos", "equipo_a": "Equipo 1", "color_a": "#1F5E3B", "equipo_b": "Equipo 2", "color_b": "#92BC26", "nota_jurado": 60, "nota_publico": 40, "estado": "Equipo 1 avanza" },
+    { "id": 2, "ronda": "cuartos", "equipo_a": "Equipo 3", "color_a": "#F4D666", "equipo_b": "Equipo 4", "color_b": "#2952A3", "nota_jurado": 60, "nota_publico": 40, "estado": "Equipo 4 avanza" },
+    { "id": 3, "ronda": "cuartos", "equipo_a": "Equipo 5", "color_a": "#C0392B", "equipo_b": "Equipo 6", "color_b": "#7B4FA6", "nota_jurado": 60, "nota_publico": 40, "estado": "Por jugarse" },
+    { "id": 4, "ronda": "cuartos", "equipo_a": "Equipo 7", "color_a": "#D9722C", "equipo_b": "Equipo 8", "color_b": "#A98B1F", "nota_jurado": 60, "nota_publico": 40, "estado": "Por jugarse" },
+    { "id": 5, "ronda": "semifinales", "equipo_a": "Equipo 1", "color_a": "#1F5E3B", "equipo_b": "Equipo 4", "color_b": "#2952A3", "nota_jurado": 60, "nota_publico": 40, "estado": "Por jugarse" },
+    { "id": 6, "ronda": "semifinales", "equipo_a": "Por definir", "color_a": "#5C6355", "equipo_b": "Por definir", "color_b": "#5C6355", "nota_jurado": 60, "nota_publico": 40, "estado": "Por jugarse" },
+    { "id": 7, "ronda": "final", "equipo_a": "Por definir", "color_a": "#5C6355", "equipo_b": "Por definir", "color_b": "#5C6355", "nota_jurado": 60, "nota_publico": 40, "estado": "Por jugarse" }
+  ],
+  "galeria": [
+    { "id": 1, "reto": "mision-punto-verde", "ronda_label": "Cuartos - Reto 1", "tipo": "foto", "color": "#1F5E3B" },
+    { "id": 2, "reto": "ecoguardianes", "ronda_label": "Cuartos - Reto 2", "tipo": "video", "color": "#92BC26" },
+    { "id": 3, "reto": "aqualab", "ronda_label": "Cuartos - Reto 3", "tipo": "foto", "color": "#4FA3A8" },
+    { "id": 4, "reto": "ecoutilidad-extrema", "ronda_label": "Cuartos - Reto 4", "tipo": "foto", "color": "#1F5E3B" },
+    { "id": 5, "reto": "mision-legado-verde", "ronda_label": "Canje Verde", "tipo": "video", "color": "#B99A2C" },
+    { "id": 6, "reto": "mision-legado-verde", "ronda_label": "Canje Verde", "tipo": "foto", "color": "#1F5E3B" },
+    { "id": 7, "reto": "ecofashion-challenge", "ronda_label": "Inauguración", "tipo": "foto", "color": "#2952A3" },
+    { "id": 8, "reto": "ecocity-2030", "ronda_label": "Inauguración", "tipo": "foto", "color": "#2E6B5E" }
+  ],
+  "usuarios_admin": [
+    { "id": 1, "usuario": "usuario@ecorecrea", "password": "ecorecrea2026" }
+  ]
+}

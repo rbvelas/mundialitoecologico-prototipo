@@ -1,0 +1,19 @@
+/* /components/Mascota.css */
+.mascota-img {
+  object-fit: contain;
+}
+
+.mascota-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px dashed var(--verde-claro);
+  border-radius: 16px;
+  background: #F1F6E4;
+  color: var(--verde-oscuro-800);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px;
+}

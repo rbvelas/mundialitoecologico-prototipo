@@ -1,0 +1,236 @@
+/* src/pages/ComoFunciona/ComoFunciona.css */
+.como-funciona {
+  padding: 28px 56px 72px;
+}
+.como-funciona-encabezado {
+  margin-bottom: 46px;
+}
+.como-funciona-encabezado h1 {
+  font-size: 32px;
+  color: var(--verde-oscuro-800);
+  margin-bottom: 12px;
+}
+.como-funciona-encabezado p {
+  color: var(--texto-muted);
+  font-size: 16px;
+  line-height: 1.55;
+  max-width: 720px;
+}
+.como-funciona-rondas {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.ronda-item {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+.mascota-rondas {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
+}
+.ronda-card {
+  flex: 1;
+  padding: 26px 22px;
+  text-align: center;
+}
+.ronda-numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--verde-oscuro-800);
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--font-display);
+  margin-bottom: 12px;
+}
+.ronda-numero.final {
+  background: var(--amarillo);
+  color: var(--verde-oscuro-800);
+}
+.ronda-card h3 {
+  font-size: 18px;
+  color: var(--verde-oscuro-800);
+  margin-bottom: 6px;
+}
+.ronda-card p {
+  font-size: 13.5px;
+  color: var(--texto-muted);
+  margin: 0;
+}
+.ronda-flecha {
+  color: var(--verde-claro);
+  flex-shrink: 0;
+}
+.evaluacion-bloque {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 14px;
+  padding: 32px 36px;
+  margin-bottom: 20px;
+}
+.evaluacion-bloque.oscuro {
+  background: var(--verde-oscuro-800);
+  color: #fff;
+}
+.evaluacion-bloque.claro {
+  background: var(--verde-claro);
+  color: var(--verde-oscuro-800);
+}
+.mascota-evaluacion {
+  position: absolute;
+  bottom: 100%; 
+  right: 36px;
+  width: 190px;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+.evaluacion-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+.evaluacion-numero {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.evaluacion-sub {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 14px;
+}
+.evaluacion-bloque p {
+  max-width: 640px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  margin: 0;
+}
+.rubrica-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+.rubrica-chip {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.nota-final {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px 26px;
+  border-style: dashed;
+  margin-top: 12px;
+}
+.nota-icono {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--amarillo);
+  color: var(--verde-oscuro-800);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.nota-final h4 {
+  font-size: 15.5px;
+  color: var(--verde-oscuro-800);
+  margin-bottom: 4px;
+}
+.nota-final p {
+  color: var(--texto-muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* --- CTA cronograma --- */
+.cronograma-cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+  margin-top: 20px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+.cronograma-cta-icono {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--verde-oscuro-800);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cronograma-cta-texto {
+  flex: 1;
+  min-width: 220px;
+}
+.cronograma-cta-texto h4 {
+  font-size: 16px;
+  color: var(--verde-oscuro-800);
+  margin: 0 0 4px;
+}
+.cronograma-cta-texto .destacado-mundialito {
+  color: var(--amarillo);
+  -webkit-text-stroke: 0.4px var(--verde-oscuro-800);
+}
+.cronograma-cta-texto p {
+  color: var(--texto-muted);
+  font-size: 14px;
+  margin: 0;
+}
+.cronograma-cta .btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .como-funciona {
+    padding: 24px 20px 56px;
+  }
+  .evaluacion-bloque {
+    flex-direction: column;
+  }
+  .como-funciona-rondas {
+    flex-direction: column;
+  }
+  .mascota-rondas,
+  .mascota-evaluacion {
+    display: none; 
+  }
+  .ronda-flecha {
+    transform: rotate(90deg);
+  }
+  .cronograma-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
