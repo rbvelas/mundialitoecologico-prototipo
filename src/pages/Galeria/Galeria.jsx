@@ -4,6 +4,7 @@ import api from '../../api/client.js';
 import Breadcrumb from '../../components/Breadcrumb.jsx';
 import Mascota from '../../components/Mascota.jsx';
 import { EstadoCarga, EstadoError } from '../../components/EstadoCarga.jsx';
+import GaleriaDetalleModal from '../../components/GaleriaDetalleModal.jsx';
 import './Galeria.css';
 
 const VISIBLES_INICIALES = 4;
@@ -14,6 +15,7 @@ export default function Galeria() {
   const [estado, setEstado] = useState('cargando');
   const [filtro, setFiltro] = useState('todos');
   const [mostrarTodos, setMostrarTodos] = useState(false);
+  const [seleccionado, setSeleccionado] = useState(null);
 
   useEffect(() => {
     let activo = true;
@@ -38,6 +40,8 @@ export default function Galeria() {
 
   const items =
     filtro === 'todos' ? galeria : galeria.filter((g) => g.reto === filtro);
+
+  const retoNombreDe = (slug) => retos.find((r) => r.slug === slug)?.nombre;
 
   return (
     <div className="container galeria-pagina">
@@ -87,10 +91,12 @@ export default function Galeria() {
           {items.length > 0 ? (
             <div className="galeria-lista">
               {items.map((item) => (
-                <div
+                <button
+                  type="button"
                   className="galeria-item"
                   key={item.id}
                   style={{ background: item.color }}
+                  onClick={() => setSeleccionado(item)}
                 >
                   {item.tipo === 'video' ? (
                     <Video size={18} />
@@ -98,7 +104,7 @@ export default function Galeria() {
                     <Camera size={18} />
                   )}
                   <span>{item.ronda_label}</span>
-                </div>
+                </button>
               ))}
             </div>
           ) : (
@@ -110,19 +116,15 @@ export default function Galeria() {
               </div>
             </div>
           )}
-
-          <div className="galeria-nota card">
-            <Mascota expresion="mitadbrazos" size={140} />
-            <div>
-              <h3>Así se verá mientras no hay fotos</h3>
-              <p>
-                Antes del evento, cada sección vacía de la galería mostrará a la
-                mascota con un mensaje como "Todavía no hay fotos de este reto,
-                un espacio en blanco. ¡vuelve pronto!", en vez de resultados.
-              </p>
-            </div>
-          </div>
         </>
+      )}
+
+      {seleccionado && (
+        <GaleriaDetalleModal
+          item={seleccionado}
+          retoNombre={retoNombreDe(seleccionado.reto)}
+          onClose={() => setSeleccionado(null)}
+        />
       )}
     </div>
   );

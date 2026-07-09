@@ -1,0 +1,127 @@
+/* src/components/GaleriaDetalleModal.css */
+
+.galeria-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 40, 28, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 1000;
+  animation: galeria-modal-fade 0.15s ease;
+}
+
+@keyframes galeria-modal-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.galeria-modal {
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 86vh;
+  overflow-y: auto;
+  padding: 36px 32px 32px;
+  box-shadow: 0 30px 60px rgba(15, 40, 25, 0.35);
+}
+
+.galeria-modal-cerrar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--linea);
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto-muted);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.galeria-modal-cerrar:hover {
+  background: var(--verde-oscuro-800);
+  color: #fff;
+}
+
+.galeria-modal-encabezado {
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+
+.galeria-modal-eyebrow {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--verde-oscuro);
+  background: rgba(31, 94, 59, 0.08);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.galeria-modal-encabezado h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 19px;
+  color: var(--verde-oscuro-800);
+  margin: 0;
+}
+
+.galeria-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.galeria-modal-grid-item {
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #EDEBE0;
+}
+.galeria-modal-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.galeria-modal-vacio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 20px;
+  border: 1px dashed var(--linea);
+  border-radius: 12px;
+}
+.galeria-modal-vacio h4 {
+  font-size: 15.5px;
+  color: var(--verde-oscuro-800);
+  margin: 0 0 6px;
+}
+.galeria-modal-vacio p {
+  font-size: 13.5px;
+  color: var(--texto-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .galeria-modal {
+    padding: 30px 22px 26px;
+  }
+  .galeria-modal-vacio {
+    flex-direction: column;
+    text-align: center;
+  }
+}
