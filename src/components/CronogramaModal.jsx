@@ -4,22 +4,26 @@ import { X, Clock } from 'lucide-react';
 import './CronogramaModal.css';
 
 const DIA_1 = [
-  { hora: '8:30 am', actividad: 'Recepción de equipos' },
-  { hora: '9:15 am', actividad: 'Apertura oficial' },
-  { hora: '9:40 am – 11:00 am', actividad: '1er bloque de desafíos (1° grado)' },
-  { hora: '12:10 pm – 12:20 pm', actividad: 'Resultados del 1er desafío' },
-  { hora: '12:25 pm – 1:40 pm', actividad: '2do bloque de desafíos (2° grado)' },
-  { hora: '1:50 pm – 2:00 pm', actividad: 'Resultados del 2do desafío' },
-  { hora: '2:00 pm – 2:20 pm', actividad: 'Reconocimiento y fotos' },
+  { hora: '8:30 am', actividad: 'Recepción de equipos y bienvenida' },
+  { hora: '9:25 am', actividad: 'Apertura oficial' },
+  { hora: '9:50 am – 10:50 am', actividad: '1er bloque de desafíos (equipos de 1° grado)' },
+  { hora: '10:50 am – 11:25 am', actividad: 'Evaluación y deliberación del jurado' },
+  { hora: '11:25 am – 12:35 pm', actividad: 'Resultados del 1er bloque' },
+  { hora: '12:45 pm – 1:45 pm', actividad: '2do bloque de desafíos (equipos de 2° grado)' },
+  { hora: '1:45 pm – 2:10 pm', actividad: 'Evaluación y deliberación del jurado' },
+  { hora: '2:10 pm – 2:20 pm', actividad: 'Resultados del 2do bloque' },
+  { hora: '2:20 pm – 2:35 pm', actividad: 'Reconocimiento y fotos' },
 ];
 
 const DIA_2 = [
-  { hora: '8:30 am', actividad: 'Recepción de equipos' },
+  { hora: '8:30 am', actividad: 'Recepción de equipos y bienvenida' },
   { hora: '9:00 am', actividad: 'Apertura oficial' },
   { hora: '9:25 am – 10:25 am', actividad: 'Semifinal' },
-  { hora: '10:45 am – 11:05 am', actividad: 'Resultados de semifinal' },
-  { hora: '11:15 am – 12:25 pm', actividad: 'Gran Final' },
-  { hora: '12:50 pm – 1:10 pm', actividad: 'Resultados finales' },
+  { hora: '10:25 am – 10:45 am', actividad: 'Evaluación y deliberación del jurado' },
+  { hora: '10:45 am – 11:10 am', actividad: 'Resultados de semifinal y reconocimiento' },
+  { hora: '11:25 am – 12:35 pm', actividad: 'Gran Final' },
+  { hora: '12:35 pm – 12:55 pm', actividad: 'Evaluación y deliberación del jurado' },
+  { hora: '12:55 pm – 1:10 pm', actividad: 'Resultados finales' },
   { hora: '1:10 pm – 1:40 pm', actividad: 'Premiación y cierre' },
 ];
 

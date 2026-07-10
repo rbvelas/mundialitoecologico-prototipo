@@ -6,7 +6,7 @@
       "nombre": "Misión Punto Verde",
       "descripcion": "Diseñar una estación de reciclaje funcional para el colegio.",
       "entregable": "Estación de reciclaje",
-      "duracion_min": 75,
+      "duracion_min": 60,
       "icono": "recycle"
     },
     {
@@ -15,7 +15,7 @@
       "nombre": "Ecoguardianes",
       "descripcion": "Construir refugios para aves o perritos con materiales reciclados.",
       "entregable": "Casita para aves o perritos",
-      "duracion_min": 85,
+      "duracion_min": 60,
       "icono": "paw-print"
     },
     {
@@ -24,7 +24,7 @@
       "nombre": "AquaLab",
       "descripcion": "Crear un prototipo para ahorrar o reutilizar agua.",
       "entregable": "Prototipo de ahorro de agua",
-      "duracion_min": 90,
+      "duracion_min": 60,
       "icono": "droplet"
     },
     {
@@ -33,7 +33,7 @@
       "nombre": "EcoUtilidad Extrema",
       "descripcion": "Construir objetos útiles para el colegio: organizadores, macetas, portalápices.",
       "entregable": "Objetos útiles reciclados",
-      "duracion_min": 85,
+      "duracion_min": 60,
       "icono": "wrench"
     },
     {
@@ -42,7 +42,7 @@
       "nombre": "EcoFashion Challenge",
       "descripcion": "Diseñar accesorios ecológicos con un mensaje ambiental.",
       "entregable": "Accesorios + lema ambiental",
-      "duracion_min": 70,
+      "duracion_min": 60,
       "icono": "shirt"
     },
     {
@@ -51,7 +51,7 @@
       "nombre": "EcoCity 2030",
       "descripcion": "Diseñar una maqueta de un colegio o ciudad sostenible del futuro.",
       "entregable": "Maqueta sostenible",
-      "duracion_min": 120,
+      "duracion_min": 60,
       "icono": "home"
     },
     {
@@ -60,7 +60,7 @@
       "nombre": "Misión Legado Verde",
       "descripcion": "Transformar un espacio real del colegio en un lugar más sostenible.",
       "entregable": "Espacio transformado",
-      "duracion_min": 150,
+      "duracion_min": 60,
       "icono": "trees"
     }
   ],
